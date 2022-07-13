@@ -3,7 +3,7 @@ from .views import Customlogin
 from django.contrib.auth.views import LogoutView
 
 urlpatterns = [
-    path('login/', Customlogin.as_view(), name='login'),
-     path('logout/', LogoutView.as_view(next_page='login'), name='logout'),
+    path('', Customlogin.as_view()),
+
 
 ]
